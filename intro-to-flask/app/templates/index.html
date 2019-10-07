@@ -1,0 +1,12 @@
+{% extends "app.html" %}
+
+{% block content %}
+
+<h2> Hello {{ user['name'] }}, you are welcomed to our website!</h2>
+{% for post in posts %}
+<div>
+    <p>{{post.author.username}}@{{post.author.age}} says: <b>{{post.body}}</b></p>
+</div>
+{% endfor %}
+
+{% endblock %}
