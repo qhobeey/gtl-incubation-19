@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<h2> Hello {{ user['name'] }}, you are welcomed to our website!</h2>
+<h2> Hi, {{ current_user.username }} !</h2>
 {% for post in posts %}
 <div>
     <p>{{post.author.username}}@{{post.author.age}} says: <b>{{post.body}}</b></p>
